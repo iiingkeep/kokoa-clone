@@ -1,3 +1,3 @@
 # kokoa Clone portfolio
 
-html and css based.
+html and css based portfolio
