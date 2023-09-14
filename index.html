@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Kokoa Talk</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <iconify-icon icon="fa6-solid:wifi"></iconify-icon>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <iconify-icon class="battery-icon" icon="fa:battery"></iconify-icon>
+      <iconify-icon class="bolt-icon" icon="ic:baseline-bolt"></iconify-icon>
+    </div>
+  </div>
+
+  <header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+    <p class="welcome-header__text">If you have a Kokoa Account, <br>log in with your email or phone number.</p>
+  </header>
+
+  <form action="friends.html" method="get" id="login-form">
+    <input required name="username" type="text" placeholder="Email or phone number">
+    <input required name="password" type="password" placeholder="Password">
+    <input type="submit" value="Log In">
+    <input type="submit" value="Sign Up">
+    <a href="#">Find Kokoa Account or Password</a>
+  </form>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
