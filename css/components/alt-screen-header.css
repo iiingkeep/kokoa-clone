@@ -1,0 +1,43 @@
+.alt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:50px 15px 18px;
+}
+
+.alt-header__column {
+  width:33%;
+}
+
+
+.alt-header__title {
+  font-size: 23px;
+  font-weight:500;
+}
+
+.alt-header__icon--chevron {
+  font-size:35px;
+}
+
+.alt-header__icon--right {
+  font-size:23px;
+}
+
+.alt-header__icon--right:first-child {
+  margin-right:20px;
+}
+
+.alt-header__column:first-child {
+  margin-right:auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align:center;
+}
+
+.alt-header__column:last-child {
+  margin-left:auto;
+  display: flex;
+  justify-content: flex-end;
+}
+

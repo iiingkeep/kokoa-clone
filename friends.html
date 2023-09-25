@@ -4,8 +4,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends - Kokoa Clone</title>
+  <title>Friends - Zootopia Talk</title>
 </head>
+
 <body>
   <div class="status-bar">
     <div class="status-bar__column">
@@ -13,11 +14,11 @@
       <iconify-icon icon="fa6-solid:wifi"></iconify-icon>
     </div>
     <div class="status-bar__column">
-      <span>18:43</span>
+      <span>22:00</span>
     </div>
     <div class="status-bar__column">
       <span>110%</span>
-      <iconify-icon class="battery-icon" icon="fa:battery"></iconify-icon>
+      <iconify-icon class="battery-icon" icon="fluent:battery-9-24-regular"></iconify-icon>
       <iconify-icon class="bolt-icon" icon="ic:baseline-bolt"></iconify-icon>
     </div>
   </div>
@@ -44,13 +45,13 @@
 <main class="friends-screen">
 <div class="user-component">
   <div class="user-component__column">
-    <img src="fubao.png" class="user-component__avatar user-component__avatar--xl"/>
+    <img src="images/fubao.png" class="user-component__avatar user-component__avatar--xl"/>
   <div class="user-component__text">
-      <h4 class="user-component__title">Fubao</h4>
+      <span class="user-component__title">Fubao</span>
       <!--<h6 class="user-component__subtitle">My name means a treasure that gives happiness!</h6>-->
   </div>
 </div>
-  <div class="user-component__column"></div>
+  <div class="user-component__column--friends-last"></div>
 </div>
 <div class="friends-screen__channel">
   <div class="friends-screen__channel-header">
@@ -59,7 +60,7 @@
   </div>
   <div class="user-component">
     <div class="user-component__column">
-      <img src="kokoachannel.png" class="user-component__avatar user-component__avatar--sm"/>
+      <img src="images/zootopiachannel.png" class="user-component__avatar user-component__avatar--sm"/>
     <div class="user-component__text">
         <h4 class="user-component__title--not-bold">Channel</h4>
     </div>
@@ -69,19 +70,78 @@
       
     </div>
   </div>
+
+<div class="friends-screen__friend">
+  <div class="friends-screen__friend-header">
+    <span>Friend</span>
+  </div>
+  <div class="user-component">
+    <div class="user-component__column user-component__column-list">
+      <img src="images/aibao.png" class="user-component__avatar user-component__avatar--sm"/>
+    <div class="user-component__text">
+        <h4 class="user-component__title--not-bold">Aibao</h4>
+    </div>
+  </div>
+  </div>
+  <div class="user-component">
+    <div class="user-component__column user-component__column-list">
+      <img src="images/gungon.png" class="user-component__avatar user-component__avatar--sm"/>
+    <div class="user-component__text">
+        <h4 class="user-component__title--not-bold">Gungon</h4>
+    </div>
+  </div>
+  </div>
+  <div class="user-component">
+    <div class="user-component__column user-component__column-list">
+      <img src="images/lalla.png" class="user-component__avatar user-component__avatar--sm"/>
+    <div class="user-component__text">
+        <h4 class="user-component__title--not-bold">Lalla</h4>
+    </div>
+  </div>
+  </div>
+  <div class="user-component">
+    <div class="user-component__column user-component__column-list">
+      <img src="images/lebao.png" class="user-component__avatar user-component__avatar--sm"/>
+    <div class="user-component__text">
+        <h4 class="user-component__title--not-bold">Lebao</h4>
+    </div>
+  </div>
+  </div>
+  <div class="user-component">
+    <div class="user-component__column user-component__column-list">
+      <img src="images/luna.png" class="user-component__avatar user-component__avatar--sm"/>
+    <div class="user-component__text">
+        <h4 class="user-component__title--not-bold">Luna</h4>
+    </div>
+  </div>
+  </div>
+  <div class="user-component">
+    <div class="user-component__column user-component__column-list">
+      <img src="images/maru.png" class="user-component__avatar user-component__avatar--sm"/>
+    <div class="user-component__text">
+        <h4 class="user-component__title--not-bold">Maru</h4>
+    </div>
+  </div>
+  </div>
 </div>
 </main>
 
 <nav class="nav">
 
   <ul class="nav__list">
-    <li class="nav__btn"><a class="nav__link" href="#"><iconify-icon class="nav__icon" icon="bi:person-fill"></iconify-icon></a></li>
-    <li class="nav__btn"><a class="nav__link" href="#">
-      <span class="nav__notification--bubble">1</span><iconify-icon class="nav__icon" icon="simple-line-icons:bubble"></iconify-icon></a></li>
-    <li class="nav__btn"><a class="nav__link" href="#"><iconify-icon class="nav__icon" icon="iconamoon:search-light"></iconify-icon></a></li>
-    <li class="nav__btn"><a class="nav__link" href="#"><span class="nav__notification--ellipsis"></span><iconify-icon class="nav__icon" icon="solar:menu-dots-linear"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="friends.html"><iconify-icon class="nav__icon" icon="ion:paw"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="chats.html">
+      <span class="nav__notification badge">6</span><iconify-icon class="nav__icon" icon="heroicons:chat-bubble-oval-left"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="find.html"><iconify-icon class="nav__icon" icon="iconamoon:search-light"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__notification--ellipsis"></span><iconify-icon class="nav__icon" icon="solar:menu-dots-linear"></iconify-icon></a></li>
   </ul>
 </nav>
+
+<div id="splash-screen">
+  <img src="images/welcome.png">
+  <iconify-icon icon="heroicons:chat-bubble-oval-left-solid"></iconify-icon>
+  <span>Logging<br>In..</span>
+</div>
 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>

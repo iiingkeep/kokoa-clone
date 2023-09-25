@@ -29,12 +29,13 @@
   border: none;
   font-size: 18px;
   margin-bottom:30px;
+  font-family: 'DynaPuff', cursive;
 }
 
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
-#login-form input[placeholder="Email or phone number"] {
+#login-form input[placeholder="Zootopia number"] {
   margin-bottom: 0px;
 }
 #login-form input:focus {
@@ -48,9 +49,26 @@
   margin-bottom:0px;
 }
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--brown);
   border-radius:10px;
   font-size: 17px;
+  position:relative;
+}
+
+
+.login-btn__icon {
+  position:absolute;
+  font-size:18px;
+}
+
+.login-icon {
+  top:393px;
+  left:265px;
+}
+
+.sign-up-icon {
+  top:464px;
+  left:269px;
 }
 
 #login-form a {
@@ -58,4 +76,51 @@
   text-decoration: none;
   font-size: 15px;
   color: rgb(0, 0, 0, 0.7)
+}
+
+
+
+@keyframes hideSplashScreen {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+    visibility:hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--brown);
+  position:absolute;
+  width:100vW;
+  height:100vh;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation:hideSplashScreen 0.3s ease-in-out 2s forwards;
+
+}
+
+#splash-screen img {
+  position:absolute;
+  width:100vW;
+  height:100vh;
+  top:0;
+}
+
+#splash-screen iconify-icon {
+  font-size:150px;
+  z-index:3;
+}
+
+#splash-screen span {
+  position:absolute;
+  font-size:22px;
+  color:white;
+  z-index:4;
+  text-align:center;
+  line-height: 140%;
+  top:305px;
 }

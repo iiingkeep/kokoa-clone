@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatroom with Lalla - Zootopia Talk</title>
+</head>
+
+<body id="chatroom-screen">
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <iconify-icon icon="fa6-solid:wifi"></iconify-icon>
+    </div>
+    <div class="status-bar__column">
+      <span>22:00</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <iconify-icon class="battery-icon" icon="fluent:battery-9-24-regular"></iconify-icon>
+      <iconify-icon class="bolt-icon" icon="ic:baseline-bolt"></iconify-icon>
+    </div>
+  </div>
+
+<header class="alt-header">
+  <div class="alt-header__column">
+    <a class="nav__link" href="chats.html">
+    <iconify-icon class="alt-header__icon--chevron" icon="ic:round-chevron-left"></iconify-icon>
+    </a>
+  </div>
+  <div class="alt-header__column alt-header__title">
+    <span>Lalla</span>
+  </div>
+  <div class="alt-header__column">
+    <iconify-icon class=
+    "alt-header__icon--right"  icon="iconamoon:search-light"></iconify-icon>
+    <iconify-icon class=
+    "alt-header__icon--right" icon="iconoir:menu"></iconify-icon>
+  </div>
+</header>
+
+<main class="main-screen main-chat">
+  <div class="chat__timestamp">
+    Monday, September 25, 2023
+  </div>
+
+  <div class="message-row message-row--own">
+    <div class="message-row__content">
+      <div class="message__info">
+        <span class="message__bubble">I'm late..<br>Go first. </span>
+        <span class="message__time">08:08</span>
+      </div>
+    </div>
+    
+  </div>
+  <div class="message-row">
+    <img src="images/lalla.png">
+    <div class="message-row__content">
+      <span class="message__author">Lalla</span>
+
+      <div class="message__info">
+        <span class="message__bubble">Ok</span>
+        <span class="message__time">08:10</span>
+      </div>
+    </div>
+  </div>
+      
+  
+</main>
+
+<form class="reply">
+  <div class="reply__column">
+    <iconify-icon icon="mdi:plus-box-outline"></iconify-icon>
+  </div>
+  <div class="reply__column">
+    <input type="type" placeholder="Write a message..">
+    <iconify-icon icon="ant-design:smile-outlined"></iconify-icon>
+    <button>
+      <iconify-icon icon="ph:arrow-up-bold"></iconify-icon>
+    </button>
+  </div>
+</form>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

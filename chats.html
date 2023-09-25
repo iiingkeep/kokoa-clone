@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friends - Kokoa Clone</title>
+  <title>Chats - Zootopia Talk</title>
 </head>
 <body>
   <div class="status-bar">
@@ -13,20 +13,23 @@
       <iconify-icon icon="fa6-solid:wifi"></iconify-icon>
     </div>
     <div class="status-bar__column">
-      <span>18:43</span>
+      <span>22:00</span>
     </div>
     <div class="status-bar__column">
       <span>110%</span>
-      <iconify-icon class="battery-icon" icon="fa:battery"></iconify-icon>
+      <iconify-icon class="battery-icon" icon="fluent:battery-9-24-regular"></iconify-icon>
       <iconify-icon class="bolt-icon" icon="ic:baseline-bolt"></iconify-icon>
     </div>
   </div>
 
-<header class="screen-header">
-  <h1 class="screen-header__title">Friends</h1>
+<header class="screen-header-chats">
+  <h1 class="screen-header__title">Chats</h1>
   <div class="screen-header__icons">
     <span>
       <iconify-icon class="friends-header-icon" icon="iconamoon:search-light"></iconify-icon></span>
+      <span>
+        <iconify-icon class="chats-header-icon" icon="fluent:chat-add-16-regular"></iconify-icon>
+      </span>
     <span>
       <iconify-icon class="friends-header-icon" icon="fluent:music-note-2-24-regular"></iconify-icon></span>
     <span>
@@ -35,51 +38,79 @@
   </div>
 </header>
 
-<a id="friends-display-link">
-  <iconify-icon class="friends__icon--information" icon="mdi:information"></iconify-icon>
-    Friends' Names Display
-  <iconify-icon class="friends__icon--chevron" icon="ic:round-chevron-right"></iconify-icon>
-</a>
 
-<main class="friends-screen">
-<div class="user-component">
+
+<main class="main-screen">
+<a href="chatroom-aibao.html">
+<div class="user-component user-component__chatlist">
   <div class="user-component__column">
-    <img src="fubao.png" class="user-component__avatar user-component__avatar--xl"/>
+    <img src="images/aibao.png" class="user-component__avatar user-component__avatar--nor"/>
   <div class="user-component__text">
-      <h4 class="user-component__title">Fubao</h4>
-      <!--<h6 class="user-component__subtitle">My name means a treasure that gives happiness!</h6>-->
+      <span class="user-component__title-chats">Aibao</span>
+      <h6 class="user-component__subtitle">Come back home right now.</h6>
   </div>
 </div>
-  <div class="user-component__column"></div>
+  <div class="user-component__column--noti">
+  <span class="user-component__time">21:22</span>
+  <div class="badge">5</div>
 </div>
-<div class="friends-screen__channel">
-  <div class="friends-screen__channel-header">
-    <span>Channel</span>
-    <iconify-icon icon="line-md:chevron-up"></iconify-icon>
-  </div>
-  <div class="user-component">
-    <div class="user-component__column">
-      <img src="kokoachannel.png" class="user-component__avatar user-component__avatar--sm"/>
-    <div class="user-component__text">
-        <h4 class="user-component__title--not-bold">Channel</h4>
-    </div>
-  </div>
-    <div class="user-component__column">
-      <span>2</span><iconify-icon class="friends__icon--chevron-right" icon="ic:round-chevron-right"></iconify-icon>
-      
-    </div>
+</div>
+</a>
+<a href="chatroom-lebao.html">
+<div class="user-component user-component__chatlist">
+  <div class="user-component__column">
+    <img src="images/lebao.png" class="user-component__avatar user-component__avatar--nor"/>
+  <div class="user-component__text">
+      <span class="user-component__title-chats">Lebao</span>
+      <h6 class="user-component__subtitle">Your mom is very angry.</h6>
   </div>
 </div>
+  <div class="user-component__column--noti">
+  <span class="user-component__time">21:20</span>
+  <div class="badge">1</div>
+</div>
+</div>
+</a>
+<a href="chatroom-luna.html">
+<div class="user-component user-component__chatlist">
+  <div class="user-component__column">
+    <img src="images/luna.png" class="user-component__avatar user-component__avatar--nor"/>
+  <div class="user-component__text">
+      <span class="user-component__title-chats">Luna</span>
+      <h6 class="user-component__subtitle">Hey! How about play with me in ten minutes?  </h6>
+  </div>
+</div>
+  <div class="user-component__column--noti">
+  <span class="user-component__time">20:20</span>
+  <div class="badge invisible-badge">1</div>
+</div>
+</div>
+</a>
+<a href="chatroom-lalla.html">
+<div class="user-component user-component__chatlist">
+  <div class="user-component__column">
+    <img src="images/lalla.png" class="user-component__avatar user-component__avatar--nor"/>
+  <div class="user-component__text">
+      <span class="user-component__title-chats">Lalla</span>
+      <h6 class="user-component__subtitle">Ok.</h6>
+  </div>
+</div>
+  <div class="user-component__column--noti">
+  <span class="user-component__time">08:10</span>
+  <div class="badge invisible-badge">1</div>
+</div>
+</div>
+</a>
 </main>
 
 <nav class="nav">
 
   <ul class="nav__list">
-    <li class="nav__btn"><a class="nav__link" href="#"><iconify-icon icon="bi:person"></iconify-icon></a></li>
-    <li class="nav__btn"><a class="nav__link" href="#">
-      <span class="nav__notification--bubble">1</span><iconify-icon class="nav__icon" icon="simple-line-icons:bubble"></iconify-icon></a></li>
-    <li class="nav__btn"><a class="nav__link" href="#"><iconify-icon class="nav__icon" icon="iconamoon:search-light"></iconify-icon></a></li>
-    <li class="nav__btn"><a class="nav__link" href="#"><span class="nav__notification--ellipsis"></span><iconify-icon class="nav__icon" icon="solar:menu-dots-linear"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="friends.html"><iconify-icon class="nav__icon" icon="ion:paw-outline"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="chats.html">
+      <span class="nav__notification badge">6</span><iconify-icon class="nav__icon" icon="heroicons:chat-bubble-oval-left-solid"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="find.html"><iconify-icon class="nav__icon" icon="iconamoon:search-light"></iconify-icon></a></li>
+    <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__notification--ellipsis"></span><iconify-icon class="nav__icon" icon="solar:menu-dots-linear"></iconify-icon></a></li>
   </ul>
 </nav>
 

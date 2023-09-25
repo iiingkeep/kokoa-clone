@@ -4,9 +4,11 @@
   width:100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 5px 3px ;
   box-sizing: border-box;
-  font-weight: 300;
+  font-weight: 400;
+  font-size:13px;
 }
 .status-bar__column {
   width:33%;
@@ -23,6 +25,6 @@
 }
 
 .status-bar__column .battery-icon {
-  font-size: 15px;
+  font-size: 23px;
   margin: 0px 3px;
 }

@@ -2,8 +2,8 @@
   position: fixed;
   bottom: 0;
   width:100%;
-  background-color: var(--grey);
-  padding:15px 55px;
+  background-color: var(--brown);
+  padding:15px 55px 10px;
   box-sizing: border-box;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -12,31 +12,24 @@
   justify-content: space-between;
 }
 .nav__icon {
-  font-size:25px;
-  color:rgb(0,0,0,0.8)
+  font-size:28px;
+  color:rgb(0,0,0,0.8);
+  width:25%;
 }
 
 .nav__link {
   position: relative;
 }
 
-.nav__notification--bubble {
-  background-color: tomato;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 12px;
+.nav__notification {
   position: absolute;
-  left: 18px;
-  bottom: 20px;
+  left: 16px;
+  bottom: 18px;
+  animation:notiAnimation 2s ease-in-out infinite;
 }
 
 .nav__notification--ellipsis {
-  background-color: tomato;
+  background-color: rgb(136, 73, 21);
   width:5px;
   height: 5px;
   border-radius: 2.5px;
@@ -44,4 +37,17 @@
   position: absolute;
   left: 25px;
   bottom: 25px;
+}
+
+
+@keyframes notiAnimation {
+  0% {
+    transform:none;
+  }
+  50% {
+    transform:translateY(-5px);
+  }
+  100% {
+    transform:none;
+  }
 }
